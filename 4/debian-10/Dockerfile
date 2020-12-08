@@ -48,6 +48,6 @@ ENV ALLOW_EMPTY_PASSWORD="no" \
 
 EXPOSE 8080 8443
 
-USER 1001
+USER root
 ENTRYPOINT [ "/opt/bitnami/scripts/matomo/entrypoint.sh" ]
 CMD [ "/opt/bitnami/scripts/matomo/run.sh" ]
